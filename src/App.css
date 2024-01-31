@@ -1,0 +1,15 @@
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.btnContainer{
+  margin-top: 0.8rem;
+}
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
