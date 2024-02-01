@@ -5,10 +5,10 @@ import SecondStep from "./Components/SecondStep";
 import ThirdStep from "./Components/ThirdStep";
 import { Step, StepLabel, Stepper } from "@mui/material";
 import { multiStepContext } from "./Context/StepContext";
+import DisplayData from "./Components/DisplayData"
 
 function App() {
-  const { currentStep,  finalData } =
-    useContext(multiStepContext);
+  const { currentStep,  finalData } = useContext(multiStepContext);
   const stepper = (step) => {
     switch (step) {
       case 1:
@@ -41,6 +41,7 @@ function App() {
           </Stepper>
         </div>
         {stepper(currentStep)}
+        {finalData && <DisplayData datas={finalData}/>}
       </div>
     </>
   );
