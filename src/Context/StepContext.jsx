@@ -4,7 +4,7 @@ import App from '../App';
 export const multiStepContext = React.createContext();
 const StepContext = ()=>{
     const [currentStep,setCurrentStep] = useState(1);
-    const [userDetails,setUserDetails] = useState([]);
+    const [userDetails,setUserDetails] = useState({});
     const [finalData,setFinalData] = useState([]);
     return (
         <div>

@@ -7,7 +7,7 @@ import { Step, StepLabel, Stepper } from "@mui/material";
 import { multiStepContext } from "./Context/StepContext";
 
 function App() {
-  const { currentStep, setCurrentStep, finalData, setFinalData } =
+  const { currentStep,  finalData } =
     useContext(multiStepContext);
   const stepper = (step) => {
     switch (step) {
